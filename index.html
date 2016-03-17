@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en" ng-app="pokemonObjects">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Pokemon Names</title>
+  <meta name="description" content="Pokemon Names">
+  <meta name="author" content="SitePoint">
+
+  <!-- <link rel="stylesheet" href="main.css?v=1.0"> -->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js">
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js">
+  </script>
+
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+</head>
+
+<body ng-controller="pokemonController as PC">
+  <div class="" ng-repeat="P in response.results">
+    <div class="card" purple>
+      <h4>Bo's Pokedex {{5 + 5}}</h4>
+      <div class="row">
+        <div class="col s4 offset-s4">
+            <button type="button" class="btn" name="button">Pokeman Name</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
